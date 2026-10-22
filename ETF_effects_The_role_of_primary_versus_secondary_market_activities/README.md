@@ -12,8 +12,9 @@ Paper review and replication of
 | [`etf_effects.ipynb`](etf_effects.ipynb) | Jupyter notebook: econometric toolkit, simulation labs, BoJ Monte Carlo, real-data modules |
 | [`etf_effects_presentation.pptx`](etf_effects_presentation.pptx) | 20-slide presentation (16:9) with speaker notes |
 | [`research_notes.md`](research_notes.md) | Paper summary, equations, results, critique, literature, data sources |
+| [`real_data_results.md`](real_data_results.md) | Summary of the real-data results in §5–6, with caveats |
 | `figures/` | Charts produced by the notebook (used in the slides) |
-| `data/` | Optional inputs for the real-data BoJ module (see below) |
+| `data/` | Inputs for the real-data BoJ module (see below); sources in [`data/SOURCES.md`](data/SOURCES.md) |
 
 ## How to run
 
@@ -53,6 +54,8 @@ These sections skip themselves if a source is unreachable.
 | `boj_etf_purchases.csv` | `date, amount_jpy_bn` | Bank of Japan → Statistics → Market Operations (daily ETF purchase results) |
 | `nikkei225_paf.csv` | `code, paf` | Nikkei Indexes → Nikkei 225 constituents and price adjustment factors |
 | `control_universe.csv` *(optional)* | `code` | Any list of non-Nikkei TOPIX stocks |
+
+The committed files were downloaded on 2026-10-22; [`data/SOURCES.md`](data/SOURCES.md) gives the exact URLs and processing.
 
 ## Key results reproduced in simulation
 
