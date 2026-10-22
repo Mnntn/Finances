@@ -1,14 +1,7 @@
-# Finances — ETF effects: primary vs secondary market
+# Finances
 
-Учебный проект: презентация и Python-ноутбук (Google Colab / Jupyter) по статье
+Finance paper reviews: presentations and Python (Colab/Jupyter) notebooks. Each paper has its own folder, named after the paper's title.
 
-> Comerton-Forde, C., Marta, T. (2025). *ETF effects: The role of primary versus secondary market activities.*
-> Journal of Financial Markets, 75, 100983. https://doi.org/10.1016/j.finmar.2025.100983
-
-## Статус
-
-| Этап | Статус |
+| Paper | Folder |
 |---|---|
-| Research и план | ✅ [`docs/research.md`](docs/research.md), [`docs/plan.md`](docs/plan.md) |
-| Ноутбук `notebooks/etf_effects.ipynb` | ⏳ |
-| Презентация `presentation/etf_effects.pptx` | ⏳ |
+| Comerton-Forde & Marta (2025), *ETF effects: The role of primary versus secondary market activities*, Journal of Financial Markets 75 | [`ETF_effects_The_role_of_primary_versus_secondary_market_activities`](ETF_effects_The_role_of_primary_versus_secondary_market_activities) |
