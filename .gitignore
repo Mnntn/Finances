@@ -1,1 +1,20 @@
+# Local tools and notes (not part of the repository)
+_local/
+**/README.md
+**/research_notes.md
+**/real_data_results.md
+
+# Notebook inputs and outputs that are regenerated locally
+**/data/
+**/figures/
+
+# Python / Jupyter
 .venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# macOS
+.DS_Store
