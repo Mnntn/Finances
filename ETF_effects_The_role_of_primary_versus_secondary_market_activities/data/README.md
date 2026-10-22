@@ -1,6 +1,6 @@
 # Inputs for notebook §5 (BoJ experiment on real data)
 
-Place these files here before running §5 in Colab:
+Place these files here before running §5:
 
 | File | Columns | Notes |
 |---|---|---|

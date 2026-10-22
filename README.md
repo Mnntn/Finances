@@ -1,6 +1,6 @@
 # Finances
 
-Finance paper reviews: presentations and Python (Colab/Jupyter) notebooks. Each paper has its own folder, named after the paper's title.
+Finance paper reviews: presentations and Python (Jupyter) notebooks. Each paper has its own folder, named after the paper's title.
 
 | Paper | Folder |
 |---|---|

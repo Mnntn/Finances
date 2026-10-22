@@ -5,30 +5,38 @@ Paper review and replication of
 > Comerton-Forde, C., Marta, T. (2025). *ETF effects: The role of primary versus secondary market activities.*
 > Journal of Financial Markets, 75, 100983. https://doi.org/10.1016/j.finmar.2025.100983
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mnntn/Finances/blob/main/ETF_effects_The_role_of_primary_versus_secondary_market_activities/etf_effects.ipynb)
-
 ## Contents
 
 | File | What it is |
 |---|---|
-| [`etf_effects.ipynb`](etf_effects.ipynb) | Colab/Jupyter notebook: econometric toolkit, simulation labs, BoJ Monte Carlo, real-data modules |
+| [`etf_effects.ipynb`](etf_effects.ipynb) | Jupyter notebook: econometric toolkit, simulation labs, BoJ Monte Carlo, real-data modules |
 | [`etf_effects_presentation.pptx`](etf_effects_presentation.pptx) | 20-slide presentation (16:9) with speaker notes |
 | [`research_notes.md`](research_notes.md) | Paper summary, equations, results, critique, literature, data sources |
 | `figures/` | Charts produced by the notebook (used in the slides) |
 | `data/` | Optional inputs for the real-data BoJ module (see below) |
 
+## How to run
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install jupyter numpy pandas matplotlib statsmodels linearmodels bidask yfinance
+jupyter lab etf_effects.ipynb
+```
+
+Then run all cells. The notebook also opens in VS Code.
+
 ## Notebook at a glance
 
-| § | Content | Paper counterpart | Runs offline |
+| § | Content | Paper counterpart | Internet needed |
 |---|---|---|---|
-| 0 | Two-way fixed-effects OLS with double-clustered SEs (checked against `linearmodels`) | all tables | ✅ |
-| 1 | The paper in brief | §1 | ✅ |
-| 2 | Simulation lab I: AP arbitrage with limits to arbitrage vs. HFT trading; size and power of the HFT test | Tables 2–4, Fig. 1 | ✅ |
-| 3 | Simulation lab II: arbitrage and information-linkage channels in constituent stocks | Table 5 | ✅ |
-| 4 | Bank of Japan experiment: identification, paper-sized simulation, Monte Carlo of Table 8 | Tables 7–8 | ✅ |
-| 5 | Real data: BoJ experiment on Japanese stocks + dose–response across BoJ regimes (2021–24 placebo) | Table 8 + extension | Colab |
-| 6 | Real data: ETF vs. basket liquidity (SPY, 1321.T); Japanese trend with tick-size controls | Tables 6, 9 | Colab |
-| 7 | Takeaways and limitations | §6 | ✅ |
+| 0 | Two-way fixed-effects OLS with double-clustered SEs (checked against `linearmodels`) | all tables | no |
+| 1 | The paper in brief | §1 | no |
+| 2 | Simulation lab I: AP arbitrage with limits to arbitrage vs. HFT trading; size and power of the HFT test | Tables 2–4, Fig. 1 | no |
+| 3 | Simulation lab II: arbitrage and information-linkage channels in constituent stocks | Table 5 | no |
+| 4 | Bank of Japan experiment: identification, paper-sized simulation, Monte Carlo of Table 8 | Tables 7–8 | no |
+| 5 | Real data: BoJ experiment on Japanese stocks + dose–response across BoJ regimes (2021–24 placebo) | Table 8 + extension | yes |
+| 6 | Real data: ETF vs. basket liquidity (SPY, 1321.T); Japanese trend with tick-size controls | Tables 6, 9 | yes |
+| 7 | Takeaways and limitations | §6 | no |
 
 The authors' data (Euronext HFT flags, 5-minute LSEG quotes) are proprietary, so §2–4 rebuild the mechanisms and estimators on simulated data with known truth. §5–6 use open data:
 
